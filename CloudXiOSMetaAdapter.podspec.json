@@ -2,7 +2,7 @@
   "name": "CloudXMetaAdapter",
   "version": "1.0.1",
   "summary": "Mobile SDK for CloudX iOS Meta Adapter",
-  "description": "Mobile SDK for CloudX iOS Meta Adapter",
+  "description": "iOS adapter add-on to the the CloucX iOS SDK for a Meta bidder",
   "homepage": "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter",
   "authors": {
     "CloudX": "support@cloudx.com"
