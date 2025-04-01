@@ -1,29 +1,31 @@
-Pod::Spec.new do |s|
-  s.name         = "CloudXMetaAdapter"
-  s.version      = "1.0.0"
-  s.summary      = "Mobile SDK for CloudX iOS Meta Adapter"
-  s.description  = "CloudX iOS SDK add on for Meta bidder"
-  s.homepage     = "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter"
-  s.authors      = { "CloudX" => "support@cloudx.com" }
-  s.license      = { :type => "Proprietary", :text => "Copyright 2024 CloudX, Inc. All rights reserved." }
-
-  s.platform     = :ios, "13.0"
-  s.swift_version = "5.0"
-  s.module_name  = "CloudXMetaAdapter"
-
-  s.source       = {
-    :http => "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/1.0.0/CloudXMetaAdapter.xcframework.zip",
-    :type => "zip",
-    :flatten => false
-  }
-
-  s.vendored_frameworks = "CloudXMetaAdapter.xcframework"
-
-  s.dependencies = {
-    "CloudXCore" => ">= 1.0.0"
-  }
-
-  s.frameworks = [
+{
+  "name": "CloudXMetaAdapter",
+  "version": "1.0.1",
+  "summary": "Mobile SDK for CloudX iOS Meta Adapter",
+  "description": "Mobile SDK for CloudX iOS Meta Adapter",
+  "homepage": "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter",
+  "authors": {
+    "CloudX": "support@cloudx.com"
+  },
+  "license": {
+    "type": "Proprietary",
+    "text": "Copyright 2024 CloudX, Inc. All rights reserved."
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "module_name": "CloudXMetaAdapter",
+  "source": {
+    "http": "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/1.0.1/CloudXMetaAdapter.xcframework.zip",
+    "type": "zip",
+    "flatten": false
+  },
+  "vendored_frameworks": "CloudXMetaAdapter.xcframework",
+  "dependencies": {
+    "CloudXCore": ">= 1.0.0"
+  },
+  "frameworks": [
     "AVFoundation",
     "AVKit",
     "AdSupport",
@@ -34,21 +36,18 @@ Pod::Spec.new do |s|
     "StoreKit",
     "SystemConfiguration",
     "UIKit"
-  ]
-
-  s.weak_frameworks = [
+  ],
+  "weak_frameworks": [
     "Combine",
     "CryptoKit",
     "SafariServices",
     "SwiftUI",
     "WebKit"
-  ]
-
-  s.pod_target_xcconfig = {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64"
+  ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
   }
-
-  s.user_target_xcconfig = {
-    "OTHER_LDFLAGS" => "-ObjC"
-  }
-end
+}
