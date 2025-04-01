@@ -1,6 +1,6 @@
 {
   "name": "CloudXMetaAdapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "Mobile SDK for CloudX iOS Meta Adapter",
   "description": "iOS adapter add-on to the the CloucX iOS SDK for a Meta bidder",
   "homepage": "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter",
@@ -17,7 +17,7 @@
   "swift_versions": "5.0",
   "module_name": "CloudXMetaAdapter",
   "source": {
-    "http": "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/1.0.1/CloudXMetaAdapter.xcframework.zip",
+    "http": "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/1.0.2/CloudXMetaAdapter.xcframework.zip",
     "type": "zip",
     "flatten": false
   },
