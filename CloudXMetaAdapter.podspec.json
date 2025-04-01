@@ -23,7 +23,8 @@
   },
   "vendored_frameworks": "CloudXMetaAdapter.xcframework",
   "dependencies": {
-    "CloudXCore": ">= 1.0.0"
+    "CloudXCore": ">= 1.0.0",
+    "FBAudienceNetwork": "~> 6.16"
   },
   "frameworks": [
     "AVFoundation",
