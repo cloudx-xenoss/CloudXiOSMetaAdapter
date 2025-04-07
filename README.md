@@ -1,5 +1,5 @@
 # ☁️ CloudXiOSMetaAdapter  
-Mintegral adapter for CloudX Core iOS SDK
+Meta adapter for CloudX Core iOS SDK
 
 # 📦 Installation
 
@@ -26,7 +26,7 @@ Add the following to your project’s Other Linker Flags in Build Settings:
 `-ObjC`
 
 ✅ **2. Enable Objective-C Exceptions (Recommended)**
-- Some older versions of Mintegral SDKs expect Obj-C exceptions to be enabled.
+- Some older versions of Meta SDKs expect Obj-C exceptions to be enabled.
 - Go to Build Settings
 - Set Enable Objective-C Exceptions (GCC_ENABLE_OBJC_EXCEPTIONS) to YES
 
@@ -51,10 +51,10 @@ If your app targets iOS 14+, and you want access to the IDFA, you must add a usa
 ```
 
 ✅ **5. Minimum Deployment Target**  
-📱 As of recent versions, Mintegral SDK requires iOS 11.0+. Set this in your project’s deployment target.
+📱 As of recent versions, Meta SDK requires iOS 11.0+. Set this in your project’s deployment target.
 
 
 ✅ **6. Bitcode (Optional)**  
-🚫 Mintegral SDK does not support Bitcode. If you're running into issues during archive or validation, disable Bitcode:  
+🚫 Meta SDK does not support Bitcode. If you're running into issues during archive or validation, disable Bitcode:  
 
 Go to your target → Build Settings → Set **Enable Bitcode** to `NO`.
