@@ -1,4 +1,4 @@
-# Meta Adapter Integratiom
+# CloudX Meta Adapter
 Meta adapter for CloudX Core iOS SDK
 
 ## Prerequisites
