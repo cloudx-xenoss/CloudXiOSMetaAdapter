@@ -14,7 +14,7 @@ Meta adapter for CloudX SDK is available though [CocoaPods](https://guides.cocoa
 
 Open your project's `Podfile` and add this line to your app's target
 ```ruby
-pod CloudXMetaAdapter
+pod 'CloudXMetaAdapter'
 ```
 
 Install the pod from command line using:
