@@ -24,7 +24,10 @@
   "vendored_frameworks": "CloudXMetaAdapter.xcframework",
   "dependencies": {
     "CloudXCore": ">= 1.0.0",
-    "FBAudienceNetwork": "~> 6.16"
+    "FBAudienceNetwork": {
+      "version": "~> 6.16",
+      "weak": true
+    }
   },
   "frameworks": [
     "AVFoundation",
@@ -43,7 +46,8 @@
     "CryptoKit",
     "SafariServices",
     "SwiftUI",
-    "WebKit"
+    "WebKit",
+    "FBAudienceNetwork"
   ],
   "pod_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
@@ -51,5 +55,4 @@
   "user_target_xcconfig": {
     "OTHER_LDFLAGS": "-ObjC"
   }
-}
-
+} 
