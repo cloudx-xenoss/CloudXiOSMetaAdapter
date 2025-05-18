@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.5', '5.6', '5.7', '5.8', '5.9', '5.10', '6.0']
   s.module_name = 'CloudXMetaAdapter'
   s.source = {
-    :http => "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/#{s.version}/CloudXMetaAdapter-Static.xcframework.zip",
+    :http => "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/#{s.version}/CloudXMetaAdapter.xcframework.zip",
     :type => "zip",
     :flatten => false
   }
-  s.vendored_frameworks = 'CloudXMetaAdapter-Static.xcframework'
-  s.preserve_paths = 'CloudXMetaAdapter-Static.xcframework'
+  s.vendored_frameworks = 'CloudXMetaAdapter.xcframework'
+  s.preserve_paths = 'CloudXMetaAdapter.xcframework'
   s.dependency 'CloudXCore', '>= 1.0.0'
   s.dependency 'FBAudienceNetwork', '~> 6.16.0'
   s.frameworks = [
@@ -25,7 +25,9 @@ Pod::Spec.new do |s|
     'Combine', 'CryptoKit', 'SafariServices', 'SwiftUI', 'WebKit', 'FBAudienceNetwork'
   ]
   s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'FRAMEWORK_SEARCH_PATHS' => '$(PODS_ROOT)/CloudXMetaAdapter',
+    'OTHER_LDFLAGS' => '-framework CloudXMetaAdapter'
   }
   s.user_target_xcconfig = {
     'OTHER_LDFLAGS' => '-ObjC'
