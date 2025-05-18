@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
     :flatten => false
   }
   s.vendored_frameworks = 'CloudXMetaAdapter-Static.xcframework'
+  s.preserve_paths = 'CloudXMetaAdapter-Static.xcframework'
   s.dependency 'CloudXCore', '>= 1.0.0'
   s.dependency 'FBAudienceNetwork', '~> 6.16.0'
   s.frameworks = [
