@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'CloudXMetaAdapter'
-  s.version          = '1.1.10'
+  s.version          = '1.1.11'
   s.summary = 'Mobile SDK for CloudX iOS Meta Adapter'
   s.description = 'iOS adapter add-on to the CloudX iOS SDK for a Meta bidder'
   s.homepage = 'https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '14.0'
   s.module_name = 'CloudXMetaAdapter'
   s.static_framework = true
-  s.source           = { :http => 'https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v1.1.10/CloudXMetaAdapter.xcframework.zip' }
+  s.source           = { :http => 'https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v1.1.11/CloudXMetaAdapter.xcframework.zip' }
     :http => "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v#{s.version}/CloudXMetaAdapter.xcframework.zip",
     :type => "zip",
     :flatten => false
