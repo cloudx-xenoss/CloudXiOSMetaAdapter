@@ -13,13 +13,13 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v1.1.14/CloudXMetaAdapter.xcframework.zip",
+        .package(url: "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v1.1.15/CloudXMetaAdapter.xcframework.zip",
     ],
     targets: [
         .binaryTarget(
             name: "CloudXMetaAdapter",
-            url: "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v1.1.14/CloudXMetaAdapter.xcframework.zip",
-            checksum: "62b6f3b14e1389398b7700ecdaa51a3a16ff4b92ef1f6be952e437397e8ca7b2"
+            url: "https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter/releases/download/v1.1.15/CloudXMetaAdapter.xcframework.zip",
+            checksum: "e2dfe87b61d231e61f0742ef03e8dc21b1e9b0cbf5031c09aab0def952c94a22"
         )
     ]
 )
