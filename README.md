@@ -3,8 +3,10 @@ Meta adapter for CloudX Core iOS SDK
 
 ## Prerequisites
 
-- Use Xcode 15.3 or higher
+- Use Xcode 15.3 or higher  
 - Target iOS 13.0 or higher
+- **iOS 14.5+ Users**: Requires Meta Audience Network SDK 6.2.1+ for proper monetization
+- **Build with Xcode 12+** (iOS SDK 14+) for iOS 14.5+ support
 
 ## 🛠️ Installation
 
@@ -41,7 +43,9 @@ https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter
 
 ## 📄 Update your Info.plist
 
-***The Meta SKAdNetowrk ID is required for Meta to make bids***
+### 🚨 Required SKAdNetwork IDs for iOS 14.5+
+
+***Both Meta SKAdNetwork IDs are required for Meta to make bids on iOS 14.5+ devices***
 ```xml
 <key>SKAdNetworkItems</key>
 <array>
@@ -49,8 +53,26 @@ https://github.com/cloudx-xenoss/CloudXiOSMetaAdapter
         <key>SKAdNetworkIdentifier</key>
         <string>v9wttpbfk9.skadnetwork</string>
     </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>n38lu8286q.skadnetwork</string>
+    </dict>
 </array>
 ```
+
+For more information, see [Apple's SKAdNetwork documentation](https://developer.apple.com/documentation/storekit/skadnetwork).
+
+## ✨ Automatic Features
+
+The CloudX Meta adapter automatically handles:
+
+- ✅ **App Tracking Transparency Integration**: Automatically configures Meta's Advertiser Tracking Enabled (ATE) flag based on your app's ATT permission status
+- ✅ **Bid Token Generation**: Creates Meta bidder tokens for programmatic auction participation  
+- ✅ **Server Reward Validation**: Supports Meta's server-side reward validation for rewarded ads
+- ✅ **iOS 14.5+ Compatibility**: Full support for App Tracking Transparency requirements
+- ✅ **Comprehensive Logging**: Detailed logs for debugging and monitoring ad performance
+
+**No additional configuration required** - the adapter integrates seamlessly with CloudX Core SDK's tracking services.
 
 ## 🧰 Project Configuration / Troubleshooting
 
